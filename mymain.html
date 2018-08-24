@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div#w {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+div#tag1 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+    background-color:red;
+    z-index: -1;
+    border: 3px solid #73AD21;
+}
+div#tag2 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+    background-color:green;
+    z-index: -1;
+    border: 3px solid #73AD21;
+}
+div#tag3 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+    background-color:blue;
+    z-index: -1;
+    border: 3px solid #73AD21;
+}
+
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+<div id="w">This div element has position: relative;
+  <div id="tag1">This Red div element has position: absolute;</div>
+  <div id="tag2">This Green div element has position: absolute;</div>
+  <div id="tag3">This Blue div element has position: absolute;</div>
+</div>
+
+<button onclick="change()">change</button>
+<script>
+var tdiv=3;
+function change(){
+
+ // alert(document.getElementById("tag1").style.zIndex);
+ for(var i=1;i<=3;i++){
+   if (document.getElementById("tag"+i).style.zIndex>0){
+    document.getElementById("tag"+i).style.zIndex=-1;
+    tdiv=i;
+   }
+ }
+ document.getElementById("tag"+((tdiv==3)?tdiv=1:tdiv+=1)).style.zIndex=2;
+
+}
+</script>
+</body>
+</html>
+
+
