@@ -55,7 +55,10 @@ div#tag3 {
 <script>
 var tdiv=3;
 function change(){
+document.getElementById("tag"+tdiv).style.zIndex=-1;
+document.getElementById("tag"+((tdiv==3)?tdiv=1:tdiv+=1)).style.zIndex=2;
 
+/*
  // alert(document.getElementById("tag1").style.zIndex);
  for(var i=3;i>0;i--){
    if (document.getElementById("tag"+i).style.zIndex>0){
@@ -64,7 +67,7 @@ function change(){
    }
  }
  document.getElementById("tag"+((tdiv==3)?tdiv=1:tdiv+=1)).style.zIndex=2;
-
+*/
 }
 </script>
 </body>

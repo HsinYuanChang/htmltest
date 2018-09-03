@@ -1,17 +1,17 @@
 h1{
-	color:#666633;
+	color:#bbddee;
 }
 
 #header{
-    background-color: #99cc99;
+    background-color: #336699;
 	height: 80px;
 	width:1250px;
 	position: relative;
 }
 .button {
-    background-color: #CCCC99; 
+    background-color: #336699; 
     border: none;
-    color: #666633;
+    color: #ddeeff;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -37,21 +37,21 @@ h1{
 #productdiv{
 	position:absolute;
 	z-index:1;
-	background-color:#eeffee;
+	background-color:#ddeeff;
 	width:1250px;
     height:800px;
 }
 #maindiv{
 	position:absolute;
 	z-index:2;
-	background-color:#eeffee;
+	background-color:#ddeeff;
 	width:1250px;
     height:800px;
 	
 }
 #footer{
 	position: relative;
-    background-color: #99cc99;
+    background-color: #336699;
 	height: 80px;
 	width:1250px;
 	bottom:0;
